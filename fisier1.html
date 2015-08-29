@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 		<title>GaxVader</title>
@@ -7,7 +8,7 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <script src="scriptgaxing.js"></script>
+
         <!-- Custom styles for this template -->
 
     </head>
@@ -65,7 +66,7 @@
                 <div class="carousel-caption">
                     <h1>Example headline.</h1>
                     <p>Note: If you're viewing this page via a <code> file://</code>URL, the next and previous glyphicon buttons on the left and right might not load display properly due to web browser security rules.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button" id="SignUpBtn">Sign up today</a></p>
                 </div>
             </div>
         </div>
@@ -101,7 +102,7 @@
 </div>
         <!-- Am terminat caruselul -->
 
-        <div class="container marketing">
+        <div class="container marketing" id="SignUpTarget">
             <div class="row">
                 <div class="col-lg-4">
                     <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
@@ -179,12 +180,16 @@
        ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="dist/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
         <!-- <script src="http://getbootstrap.com/assets/js/vendor/holder.min.js"></script> -->
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
         <link href="gaxvader.css" rel="stylesheet">
+        /* This script has to go after jquery is loaded otherwise it won't recongnize
+           $( document )
+        */
+        <script src="scriptgaxing.js"></script>
 	</body>
 </html>
 
